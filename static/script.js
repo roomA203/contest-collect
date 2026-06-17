@@ -51,9 +51,7 @@ function savePosts() {
     const reader = new FileReader();
     reader.onload = () => finishSave(reader.result);
     reader.onerror = () => {
-      alert(
-        "이미지를 불러오는 중 오류가 발생했습니다. 이미지 없이 저장합니다.",
-      );
+      alert("이미지를 불러오는 중 오류가 발생했습니다. 이미지 없이 저장합니다.");
       finishSave(null);
     };
     reader.readAsDataURL(imageFile);
