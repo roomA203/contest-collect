@@ -140,16 +140,21 @@ function getFilteredContests() {
 document.addEventListener("DOMContentLoaded", () => {
   setupCardEvents();
 
+  const contestListEl = document.querySelector("#contest-list");
+  if (!contestListEl) return;
+
   const categorySelect = document.querySelector("#category-filter");
   const recruitCheckbox = document.querySelector("#recruit-filter");
 
-  if (categorySelect && recruitCheckbox) {
-    // contests.html (대회 모아보기) 전용 동작
-    renderCurrentView = () => renderContests(getFilteredContests());
-    categorySelect.addEventListener("change", renderCurrentView);
-    recruitCheckbox.addEventListener("change", renderCurrentView);
-    renderCurrentView();
-  }
-  // 필터 컨트롤이 없는 페이지(예: bookmark.html)는
-  // 해당 페이지의 스크립트에서 renderCurrentView를 직접 설정합니다.
+  // 필터 컨트롤(select, checkbox)이 있든 없든 일단 목록은 항상 보여줍니다.
+  // (필터 컨트롤이 없거나 id가 다르면 그냥 전체 목록이 보입니다)
+  renderCurrentView = () => renderContests(getFilteredContests());
+
+  if (categorySelect) categorySelect.addEventListener("change", renderCurrentView);
+  if (recruitCheckbox) recruitCheckbox.addEventListener("change", renderCurrentView);
+
+  renderCurrentView();
+
+  // bookmark.html처럼 별도 초기화가 있는 페이지는 그 스크립트가
+  // 아래에서 renderCurrentView를 덮어쓰고 다시 호출합니다.
 });
