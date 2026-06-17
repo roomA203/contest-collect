@@ -1,3 +1,50 @@
-.contest-control {
-    display: flex;
+/* 기존 contest.css(또는 style.css)에 아래 내용을 추가해주세요 */
+
+.contest-card {
+  border: 1px solid #000000;
+  padding: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-top h3 {
+  margin: 0;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.bookmark-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #f5a623;
+  padding: 0 4px;
+}
+
+.delete-btn {
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.detail {
+  margin-top: 12px;
 }

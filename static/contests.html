@@ -1,28 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contest.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contest.css" />
     <title>Document</title>
-</head>
-<body>
-    <h2> 대회 모아보기 </h2>
-    <hr>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="contests.js"></script>
+  </head>
+  <body>
+    <h2>대회 모아보기</h2>
+    <hr />
 
     <div class="contest-control">
-        <select>
-            <option selected>카테고리 . .</option>
-            <option>해커톤</option>
-            <option>AI</option>
-            <option>게임</option>
-            <option>보안</option>
-        </select>
-        
-        <input type="checkbox"> 모집중
+      <select>
+        <option selected>카테고리 . .</option>
+        <option>해커톤</option>
+        <option>AI</option>
+        <option>게임</option>
+        <option>보안</option>
+      </select>
+
+      <input type="checkbox" /> 모집중
     </div>
     <div id="contest-list"></div>
-    
-    <script src="contests.js"></script>
-</body>
+  </body>
 </html>
