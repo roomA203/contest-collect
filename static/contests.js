@@ -49,7 +49,7 @@ function renderContests(data) {
                 <p>대회일: ${contest.contestDate}</p>
                 ${
                   contest.image
-                    ? `<img src="${contest.image}" class="contest-image" alt="첨부 이미지" />`
+                    ? `<img src="${contest.image}" class="contest-image" alt="첨부 이미지" style="width:100%"/>`
                     : ""
                 }
                 <div>${marked.parse(contest.content || "")}</div>
@@ -150,8 +150,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // (필터 컨트롤이 없거나 id가 다르면 그냥 전체 목록이 보입니다)
   renderCurrentView = () => renderContests(getFilteredContests());
 
-  if (categorySelect) categorySelect.addEventListener("change", renderCurrentView);
-  if (recruitCheckbox) recruitCheckbox.addEventListener("change", renderCurrentView);
+  if (categorySelect)
+    categorySelect.addEventListener("change", renderCurrentView);
+  if (recruitCheckbox)
+    recruitCheckbox.addEventListener("change", renderCurrentView);
 
   renderCurrentView();
 
