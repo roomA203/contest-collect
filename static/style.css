@@ -1,5 +1,5 @@
 .controls {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .login-page {
@@ -21,4 +21,40 @@
 
 .people {
     font-size: 14px;
+}
+
+.idx-body{
+    background-color: #6a89a7;
+    height: 100vh;
+    margin:0px;
+    display: flex;
+    justify-content: center; /* 가로 가운데 */
+    align-items: center;
+}
+
+.index-header {
+    color:rgba(255, 255, 255, 0.759);
+    padding:10px 20px;
+    text-align: center;
+}
+
+.cont-add{
+    margin: 20px;
+}
+.cont-add:hover{
+    text-decoration: underline;
+}
+
+.cont-contests{
+    margin: 20px;
+}
+.cont-contests:hover{
+    text-decoration: underline;
+}
+
+.cont-bookmark{
+    margin: 20px;
+}
+.cont-bookmark:hover{
+    text-decoration: underline;
 }
