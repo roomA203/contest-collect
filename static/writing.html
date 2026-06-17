@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>대회 추가하기</h2>
+    <div class="con-ipt">
+      <input placeholder="대회 이름 입력" id="contest-title" required />
+
+      <div class="con-field">
+        <select required id="category">
+          <option selected>카테고리</option>
+          <option>해커톤</option>
+          <option>보안</option>
+          <option>AI</option>
+          <option>게임</option>
+          <option>기타</option>
+        </select>
+
+        <div class="people" id="men">
+          <input type="radio" name="mens" value = "개인" id="personal" required /> 개인
+          <input type="radio" name="mens" value="팀" id="team" required /> 팀원
+        </div>
+      </div>
+
+      첨부파일 <br />
+
+      <input id="con-img" type="file" accept="image/*" />
+      <div class="dates">
+        모집 마감 <input type="date" id="deadline" required /> <br />
+        대회 날짜 <input type="date" id="contest-date" required />
+      </div>
+
+      <div class="cont-detail">
+        <textarea
+          placeholder="세부사항 작성 (마크다운)"
+          rows="10"
+          cols="50"
+          id="details"
+        ></textarea>
+      </div>
+
+      <button type="submit" onclick="savePosts()">작성 완료</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

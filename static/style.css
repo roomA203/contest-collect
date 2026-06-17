@@ -1,0 +1,24 @@
+.controls {
+    cursor: pointer
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-page input {
+    width: 200px;
+    margin: 8px;
+    font-size:16px;
+}
+
+.login-page input:focus {
+    border-color: gray;
+}
+
+.people {
+    font-size: 14px;
+}
