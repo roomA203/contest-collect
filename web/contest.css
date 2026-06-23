@@ -1,7 +1,7 @@
 /* 기존 contest.css(또는 style.css)에 아래 내용을 추가해주세요 */
 
 .contest-card {
-  border: 1px solid #000000;
+  border: 1px solid #6A89A7;
   padding: 16px;
   margin-bottom: 12px;
   cursor: pointer;
@@ -31,12 +31,12 @@
   font-size: 20px;
   line-height: 1;
   cursor: pointer;
-  color: #f5a623;
+  color: #BDDDFC;
   padding: 0 4px;
 }
 
 .delete-btn {
-  background: #ff4d4f;
+  background: #4d7cff;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -47,4 +47,14 @@
 
 .detail {
   margin-top: 12px;
+}
+
+button {
+  background-color: #88BDF2;
+  color:white;
+}
+
+button:hover{
+  background-color: #6fa0d1;
+  color:white;
 }
