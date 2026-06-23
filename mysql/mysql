@@ -1,0 +1,22 @@
+create table Category(
+category_id int primary key auto_increment,
+category_name varchar(50)
+);
+create table Host(
+host_id int primary key auto_increment,
+host_name varchar(100)
+);
+create table Contest(
+contest_id int primary key auto_increment,
+contest_name varchar(100),
+category_id int,
+host_id int,
+deadline date,
+team_size int,
+url varchar(255),
+foreign key(category_id)
+references Category(category_id),
+ 
+foreign key(host_id)
+references Host(host_id)
+);
