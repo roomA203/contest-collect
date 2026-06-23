@@ -9,6 +9,13 @@
     height: 100vh;
 }
 
+.lgn-btn {
+    border-color:none;
+    color:#384959;
+    background-color: #88bdf2;
+
+}
+
 .login-page input {
     width: 200px;
     margin: 8px;
@@ -57,4 +64,19 @@
 }
 .cont-bookmark:hover{
     text-decoration: underline;
+}
+
+.login-page{
+    background-color: #6a89a7;
+}
+
+.login-page input{
+    background-color: #8ba6c0;
+    border-color: #384959;
+    border: 0.5px;
+
+}
+
+.login-page input::placeholder{
+    color: #6a89a7;
 }
