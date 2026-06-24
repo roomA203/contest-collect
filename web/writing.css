@@ -1,8 +1,45 @@
+
 body {
-    background-color: #6a89a7;
+  background-color: #BDDDFC;
+  color: #384959;
+  font-family: sans-serif;
+}
+ 
+h2 {
+  color: #384959;
+}
+ 
+.con-ipt {
+  background-color: #ffffff;
+  border: 1px solid #6A89A7;
+  padding: 20px;
+}
+ 
+input,
+select,
+textarea {
+  background-color: #ffffff;
+  color: #384959;
+  border: 1px solid #6A89A7;
+}
+ 
+input::placeholder,
+textarea::placeholder {
+  color: #6A89A7;
+}
+ 
+.con-field {
+  background-color: #BDDDFC;
+}
+ 
+.people {
+  background-color: #BDDDFC;
+}
+ 
+.dates {
+  background-color: #BDDDFC;
 }
 
-button {
-    background-color: #bdddfc;
+input {
+    background-color: ;
 }
-
